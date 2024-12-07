@@ -7,121 +7,122 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
+  background-color: #1b1b1b;
+  color: #fff;
 }
 
-/* Header */
-header {
-  background-color: #1e3a8a;
-  padding: 10px 20px;
-}
-
-nav {
+.header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  padding: 20px;
+  background-color: #212121;
 }
 
-nav .logo h1 {
-  color: #fff;
-  font-size: 1.5em;
+.header .logo h1 {
+  font-size: 36px;
+  color: #0ff;
 }
 
-nav ul {
+.header .logo p {
+  font-size: 14px;
+  color: #bdbdbd;
+}
+
+.nav-links {
   list-style: none;
   display: flex;
+  gap: 20px;
 }
 
-nav ul li {
-  margin-left: 20px;
+.nav-links li {
+  padding: 5px;
 }
 
-nav ul li a {
+.nav-links a {
   color: #fff;
   text-decoration: none;
-  font-size: 1.1em;
+  font-size: 18px;
 }
 
-/* Hero Section */
 .hero {
-  background-color: #5b21b6;
-  color: #fff;
-  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  padding: 60px;
+  background: linear-gradient(135deg, #0a0a0a, #1b1b1b);
   text-align: center;
 }
 
 .hero h2 {
-  font-size: 2.5em;
+  font-size: 48px;
+  color: #0ff;
 }
 
 .cta-button {
-  background-color: #f59e0b;
+  background-color: #0ff;
+  color: #1b1b1b;
   padding: 15px 30px;
-  color: #fff;
-  text-decoration: none;
-  font-size: 1.2em;
-  border-radius: 5px;
+  font-size: 18px;
+  margin: 10px;
+  cursor: pointer;
+  border: none;
 }
 
 .cta-button:hover {
-  background-color: #f97316;
+  background-color: #0cc;
 }
 
-/* Projects Section */
 .projects {
-  padding: 40px 20px;
+  padding: 40px;
+  background-color: #333;
 }
 
-.projects h2 {
-  font-size: 2em;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.project-list {
+.project-cards {
   display: flex;
-  justify-content: space-around;
+  gap: 30px;
 }
 
-.project {
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  width: 30%;
+.card {
+  background-color: #444;
   padding: 20px;
-  text-align: center;
-}
-
-.project img {
-  width: 100%;
   border-radius: 10px;
-}
-
-.project h3 {
-  font-size: 1.5em;
-  margin-top: 15px;
-}
-
-.progress-bar {
-  background-color: #e5e7eb;
-  height: 10px;
-  border-radius: 5px;
-  margin-top: 10px;
-  width: 100%;
-}
-
-.progress {
-  background-color: #4ade80;
-  height: 100%;
-  border-radius: 5px;
-}
-
-/* Footer */
-footer {
   text-align: center;
-  padding: 20px;
-  background-color: #1e3a8a;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.submit-project {
+  background-color: #333;
+  padding: 40px;
+}
+
+.submit-project form {
+  display: flex;
+  flex-direction: column;
+}
+
+.submit-project label {
+  margin-bottom: 10px;
   color: #fff;
-  margin-top: 40px;
+}
+
+.submit-project input, .submit-project textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.submit-project button {
+  background-color: #0ff;
+  color: #1b1b1b;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.submit-project button:hover {
+  background-color: #0cc;
 }
