@@ -1,0 +1,127 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #1e3a8a;
+  padding: 10px 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .logo h1 {
+  color: #fff;
+  font-size: 1.5em;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1em;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #5b21b6;
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 2.5em;
+}
+
+.cta-button {
+  background-color: #f59e0b;
+  padding: 15px 30px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2em;
+  border-radius: 5px;
+}
+
+.cta-button:hover {
+  background-color: #f97316;
+}
+
+/* Projects Section */
+.projects {
+  padding: 40px 20px;
+}
+
+.projects h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.project-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.project {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  padding: 20px;
+  text-align: center;
+}
+
+.project img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.project h3 {
+  font-size: 1.5em;
+  margin-top: 15px;
+}
+
+.progress-bar {
+  background-color: #e5e7eb;
+  height: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.progress {
+  background-color: #4ade80;
+  height: 100%;
+  border-radius: 5px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #1e3a8a;
+  color: #fff;
+  margin-top: 40px;
+}
