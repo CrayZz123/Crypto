@@ -1,73 +1,60 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CCF - Plateforme de Financement Participatif Décentralisé</title>
+  <title>CCF Platform</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-  <!-- Header -->
-  <header>
+  <header class="header">
+    <div class="logo">
+      <h1>CCF</h1>
+      <p>Clement Core Fund</p>
+    </div>
     <nav>
-      <div class="logo">
-        <h1>CCF</h1>
-      </div>
-      <ul>
-        <li><a href="#explore">Explorer les projets</a></li>
-        <li><a href="#submit">Soumettre un projet</a></li>
-        <li><a href="#login">Se connecter</a></li>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#submit">Submit a Project</a></li>
+        <li><a href="#signin">Sign In</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-text">
-      <h2>Empowering Innovation, One Token at a Time</h2>
-      <a href="#explore" class="cta-button">Explorer les projets</a>
-    </div>
+  <section id="home" class="hero">
+    <h2>Empowering Innovation, One Token at CCF</h2>
+    <p>Explore Projects, Submit a Project, Join the Movement.</p>
+    <button class="cta-button">Explore Projects</button>
+    <button class="cta-button">Submit a Project</button>
   </section>
 
-  <!-- Projects Section -->
-  <section id="explore" class="projects">
-    <h2>Projets populaires</h2>
-    <div class="project-list">
-      <div class="project">
-        <img src="project1.jpg" alt="Projet 1">
-        <h3>Projet A</h3>
-        <p>Description courte du projet A.</p>
-        <div class="progress-bar">
-          <div class="progress" style="width: 50%;"></div>
-        </div>
-        <p>50% financé</p>
-      </div>
-      <div class="project">
-        <img src="project2.jpg" alt="Projet 2">
-        <h3>Projet B</h3>
-        <p>Description courte du projet B.</p>
-        <div class="progress-bar">
-          <div class="progress" style="width: 30%;"></div>
-        </div>
-        <p>30% financé</p>
-      </div>
-      <div class="project">
-        <img src="project3.jpg" alt="Projet 3">
-        <h3>Projet C</h3>
-        <p>Description courte du projet C.</p>
-        <div class="progress-bar">
-          <div class="progress" style="width: 70%;"></div>
-        </div>
-        <p>70% financé</p>
+  <section id="projects" class="projects">
+    <h2>Explore Projects</h2>
+    <div class="project-cards">
+      <div class="card">
+        <h3>Project Title</h3>
+        <p>Short Description of the Project.</p>
+        <button>Explore</button>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
+  <section id="submit" class="submit-project">
+    <h2>Submit Your Project</h2>
+    <form>
+      <label for="projectName">Project Name</label>
+      <input type="text" id="projectName" name="projectName" required>
+      <label for="projectDesc">Project Description</label>
+      <textarea id="projectDesc" name="projectDesc" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
   <footer>
-    <p>&copy; 2024 CCF - Clément Core Fund</p>
+    <p>&copy; 2024 CCF. All Rights Reserved.</p>
   </footer>
 
+  <script src="app.js"></script>
 </body>
 </html>
